@@ -10,6 +10,10 @@ describe('Bubble Sort', function() {
     trial.array.push(2);
     trial.array.push(3);
     trial.array.push(1);
-    expect(trial.swap.calls.count()).toEqual(2)
+    trial.array.push(1);
+    trial.array.push(5);
+    trial.sort();
+    expect(trial.swap.calls.count()).toEqual(4)
   })
+
 });
